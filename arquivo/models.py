@@ -4,6 +4,6 @@ from django.db import models
 from tarefa.models import Tarefa
 
 # Create your models here.
-class arquivo(models.Model):
+class Arquivo(models.Model):
     tarefa = models.ForeignKey(Tarefa, on_delete=models.CASCADE)
     arquivo = models.FileField(upload_to="evidencias/")
