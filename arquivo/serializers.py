@@ -4,4 +4,4 @@ from .models import Arquivo
 class ArquivoSerializer(ModelSerializer):
     class Meta:
         model = Arquivo
-        fields = "__all__"
+        fields = ["id", "arquivo"]
